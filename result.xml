@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="2" time="0.170" timestamp="2021-01-30T14:42:32.240033" hostname="zhaojing24051"><testcase classname="testing.test_cal.Testcal" name="test_add" time="0.002" /><testcase classname="testing.test_cal.Testcal" name="test_div" time="0.001"><failure message="assert 2 == 1.0&#10; +  where 1.0 = &lt;bound method Calculator.div of &lt;pythoncode.Calculator.Calculator object at 0x0000028EA214B1C0&gt;&gt;(1, 1)&#10; +    where &lt;bound method Calculator.div of &lt;pythoncode.Calculator.Calculator object at 0x0000028EA214B1C0&gt;&gt; = &lt;pythoncode.Calculator.Calculator object at 0x0000028EA214B1C0&gt;.div&#10; +      where &lt;pythoncode.Calculator.Calculator object at 0x0000028EA214B1C0&gt; = &lt;testing.test_cal.Testcal object at 0x0000028EA214BC40&gt;.cal">self = &lt;testing.test_cal.Testcal object at 0x0000028EA214BC40&gt;
+
+    @pytest.mark.div
+    def test_div(self):
+        # 在每一个方法都进行计算器类实例化代码比较冗余，可以使用类级的setup/teardown
+        # cal = Calculator()
+        print("除法")
+&gt;       assert 2 == self.cal.div(1, 1)
+E       assert 2 == 1.0
+E        +  where 1.0 = &lt;bound method Calculator.div of &lt;pythoncode.Calculator.Calculator object at 0x0000028EA214B1C0&gt;&gt;(1, 1)
+E        +    where &lt;bound method Calculator.div of &lt;pythoncode.Calculator.Calculator object at 0x0000028EA214B1C0&gt;&gt; = &lt;pythoncode.Calculator.Calculator object at 0x0000028EA214B1C0&gt;.div
+E        +      where &lt;pythoncode.Calculator.Calculator object at 0x0000028EA214B1C0&gt; = &lt;testing.test_cal.Testcal object at 0x0000028EA214BC40&gt;.cal
+
+testing\test_cal.py:35: AssertionError</failure></testcase></testsuite></testsuites>
