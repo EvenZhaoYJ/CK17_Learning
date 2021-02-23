@@ -12,10 +12,10 @@ class Calculator():
 
     # 除法:Python3除法的返回结果为浮点型
     def div(self,a,b):
-        try:
-            return round(a / b,10)
-        except ZeroDivisionError:
-            return ('Divisor cannot be zero')
+        return a / b
+
+
+
 
 
 
