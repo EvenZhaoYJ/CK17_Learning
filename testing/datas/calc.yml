@@ -16,8 +16,8 @@ div:
   int:
     datas:
       - [0,1,0]
-      - [0.1,0.2,0.3]
-      - [1,0,'Divisor cannot be zero']
+      - [0.1,0.2,0.5]
+      - [1,0,0]
       - [-1,-2,0.5]
       - [1010,202,5]
-    ids: ['int','float','zero','minus','bignum']
+    ids: ['整数','float','zero','minus','bignum']
