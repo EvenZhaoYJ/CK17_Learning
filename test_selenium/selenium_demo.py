@@ -60,11 +60,11 @@ class TestTmp():
         注意点：cookie有有效时间--"expiry": 1646021610
         :return:
         """
-        # 获取登录后的cookkie,将获取的cookie保存到文件中
-        cookies = self.driver.get_cookies()
-        with open("cookies.txt","w",encoding="utf-8") as f:
-            f.write(json.dumps(cookies))
-            # json.dump(cookies,f)
+        # # 获取登录后的cookkie,将获取的cookie保存到文件中
+        # cookies = self.driver.get_cookies()
+        # with open("cookies.txt","w",encoding="utf-8") as f:
+        #     f.write(json.dumps(cookies))
+        #     # json.dump(cookies,f)
 
         # 指定地址，携带cookie
         self.driver.get("https://work.weixin.qq.com/wework_admin/frame")
