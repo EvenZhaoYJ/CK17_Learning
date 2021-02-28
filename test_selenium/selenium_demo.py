@@ -26,8 +26,6 @@ class TestTmp():
     def teardown_method(self):
         self.driver.quit()
 
-    def get_cookies(self):
-
 
     def test_login_tmp(self):
         """
